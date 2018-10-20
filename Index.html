@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> AutoComplete Using On Jqueey </title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.min.css" />
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            var availableTags= [".NET","JAVA","SQL"]; 
+            $("#txtSearch").autocomplete({
+                source:availableTags
+            });
+         });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <form>
+                    <div class="form-group">
+                        <label for="txtSearch"> Ara </label>
+                        <input id="txtSearch" placeholder="Ara" class="form-control" type="text">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+
+</html>
